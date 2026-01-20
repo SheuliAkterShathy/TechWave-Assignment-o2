@@ -43,7 +43,7 @@
       </nav>
 
       <div
-        class="flex flex-col items-center justify-center text-center bg-[url(./assets/hero-bg.png)] text-white bg-no-repeat bg-cente mt-6 lg:py-24 bg-contain w-full bg-top"
+        class="flex flex-col items-center justify-center text-center bg-[url(./assets/hero-bg.png)] text-white bg-no-repeat mt-6 lg:py-24 bg-contain w-full bg-top"
       >
         <div class="relative">
           <!-- circle -->
@@ -68,19 +68,21 @@
             growth
           </p>
         </div>
-        <div class="btn-container flex gap-2">
+        <div class="btn-container flex gap-3">
           <div
-            class="flex gap-2 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 rounded-4xl px-5 py-3"
+            class="flex gap-2 items-center bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 rounded-4xl px-5 py-3 transition-all duration-300
+         hover:scale-110 cursor-pointer"
           >
             <img class="h-6" src="./assets/spotify.png" alt="" />
-            <button class="font-semibold border-none">Listen on Spotify</button>
+            <button class="font-semibold border-none text-xl  cursor-pointer">Listen on Spotify</button>
           </div>
 
           <div
-            class="flex items-center justify-center gap-2 text-green-600 border-1 border-green-600 rounded-4xl px-5 py-3"
+            class="flex items-center justify-center gap-2 text-green-600 border-1 border-green-600 rounded-4xl px-5 py-3 transition-all duration-300
+         hover:scale-110 cursor-pointer"
           >
             <img class="h-6" src="./assets/message.png" alt="" />
-            <button class="font-semibold border-none">Subscribe</button>
+            <button class="font-semibold border-none text-xl cursor-pointer">Subscribe</button>
           </div>
         </div>
       </div>
@@ -88,7 +90,7 @@
 
     <main>
       <!-- the podcast section -->
-      <section class="max-w-[1200px] mx-auto mt-16">
+      <section class="max-w-[1200px] mx-auto px-4 mt-16">
         <h2
           class="text-white font-bold sm:text-3xl lg:text-4xl text-center mb-10"
         >
@@ -127,7 +129,7 @@
         </div>
       </section>
       <!-- choose TechWave section -->
-      <section class="lg:px-50 mx-auto lg:py-28">
+      <section class="lg:px-50 mx-auto px-4 lg:py-28">
         <h2
           class="text-white font-bold sm:text-3xl lg:text-4xl text-center mb-10"
         >
@@ -192,7 +194,7 @@
       </section>
 
       <!-- featured episode section -->
-      <section class="max-w-[1200px] mx-auto">
+      <section class="max-w-[1200px] mx-auto px-4">
         <h2
           class="text-white font-bold sm:text-3xl lg:text-4xl text-center mb-10 mt-14"
         >
@@ -350,16 +352,19 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[url(./assets/footer-bg.png)]" style="background-size: 100% 100%; background-repeat: no-repeat; " >
+    <footer
+      class="bg-[url(./assets/footer-bg.png)] bg-cover bg-center bg-no-repeat"
+      style="background-size: 100% 100%; "
+    >
       <div class="py-32">
-        <h2 class="text-center text-white font-bold text-5xl mb-8">
+        <h2 class="text-center text-white font-bold text-4xl lg:text-5xl mb-8">
           Tech<span
             class="bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500 bg-clip-text text-transparent text-gradient-to-r"
             >Wave</span
           >
         </h2>
-        <div class="grid grid-cols-2 sm:flex justify-center gap-10 mb-8">
-          <div class="flex gap-2 justify-center items-center">
+        <div class="grid grid-cols-2 sm:flex justify-center items-center lg:gap-10 gap-4 mb-8 px-12">
+          <div class="flex gap-2 justify-center items-center text-center">
             <img class="h-5" src="./assets/spotify.png" alt="" />
             <p class="text-white">Spotify</p>
           </div>
